@@ -1,7 +1,6 @@
 import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider'
 import Box from '@material-ui/core/Box'
-import Typography from '@material-ui/core/Typography'
 
 import TodoAddForm from '@/component/sections/todoAddForm'
 import TodoList from '@/component/sections/todoList'

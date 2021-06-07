@@ -5,7 +5,7 @@
     "email": "lewisyubu@gmail.com",
     "url": "https://lewisyuburi.com"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
