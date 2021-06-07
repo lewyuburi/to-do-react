@@ -1,0 +1,12 @@
+.todoAddForm {
+  margin: 1rem 0;
+  display: block;
+  position: relative;
+
+  .addTodoButton {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import CssBaseline from '@material-ui/core/CssBaseline';
+
+import Snackbar from '@/component/sections/snackbar'
+
+import { StoreProvider } from '@/store/index'
+
+import RouterComponent from './router';
 import reportWebVitals from './reportWebVitals';
 
+import './index.scss';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StoreProvider>
+    <CssBaseline />
+    <RouterComponent />
+    <Snackbar />
+  </StoreProvider>,
   document.getElementById('root')
 );
 

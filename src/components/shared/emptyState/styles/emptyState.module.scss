@@ -1,0 +1,22 @@
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+
+  .iconContainer {
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, .05);
+    display: flex;
+    margin-bottom: 1rem;
+
+    .icon {
+      font-size: 2.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+}
