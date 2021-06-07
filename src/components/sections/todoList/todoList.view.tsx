@@ -75,6 +75,7 @@ const TodoListView = (props: TodoListViewProps) => {
 
           <TablePagination
             component="div"
+            labelRowsPerPage="Per page"
             rowsPerPageOptions={[5, 10, 25]}
             count={props.totalTodoCount}
             page={props.page}

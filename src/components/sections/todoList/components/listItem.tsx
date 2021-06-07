@@ -24,7 +24,6 @@ const ListItem = (props: ListItemProps) => {
   return (
     <MaterialListItem
       key={props.data.uuid}
-      onClick={() => props.onClick(props.data)}
       selected={props.selected}
       divider
       button
@@ -42,9 +41,10 @@ const ListItem = (props: ListItemProps) => {
       </ListItemIcon>
 
       <ListItemText
+        onClick={() => props.onClick(props.data)}
         primary={(
           <Typography
-            variant="body1"
+            variant="subtitle1"
             component={props.data?.completedAt === undefined ? 'span' : 'del'}
             color={props.data?.completedAt === undefined ? 'textPrimary' : 'textSecondary'}
           >
@@ -58,8 +58,7 @@ const ListItem = (props: ListItemProps) => {
         )}
       />
 
-
-      <ListItemSecondaryAction>
+      <ListItemIcon>
         <Box display="flex" alignItems="center">
 
           {props.data?.category && (
@@ -84,7 +83,7 @@ const ListItem = (props: ListItemProps) => {
 
         </Box>
 
-      </ListItemSecondaryAction>
+      </ListItemIcon>
     </MaterialListItem>
   );
 };
